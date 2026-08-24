@@ -35,8 +35,8 @@ int32_t get_table_index(size_t i) {
     return table_index;
 }
 
-uint32_t hash_table[table_size + 1];
-uint32_t dense_table[particle_count];
+uint32_t hash_table[TABLE_SIZE];
+uint32_t dense_table[PARTICLE_COUNT];
 
 void spatial_hashing() {
     //memset(hash_table, 0, (table_size + 1)*sizeof(hash_table[0]));

@@ -12,7 +12,7 @@ typedef struct Particle {
     float pressure;
 } Particle;
 
-Particle particles[particle_count];
+Particle particles[PARTICLE_COUNT];
 
 #endif // !PARTICLE_H
 #define PARTICLE_H

@@ -7,6 +7,9 @@ const float box_size = 12.f;
 const float damping = 1.0f;
 const float epsilon = 0.001f;
 
+#define PARTICLE_COUNT 10000
+#define TABLE_SIZE 10001
+
 const float smoothing_radius = 1.0f;
 
 const float ball_radius = 1.2f;
@@ -19,7 +22,7 @@ const float max_color_speed = 5.f;
 
 const int screen_width = 1920;
 const int screen_height = 1080;
-const int target_fps = 30;
+const int target_fps = 60;
 const float downscale_factor = 2.f;
 const int updates_per_frame = 1;
 const float simulation_speed_multiplier = 6.f;
