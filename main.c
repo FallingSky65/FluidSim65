@@ -7,7 +7,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-//#define MY_CAMERA_DO_NOT_USE_MOUSE
+#define MY_CAMERA_DO_NOT_USE_MOUSE
 #include "my_camera.h"
 #include "params.h"
 #include "particle.h"
@@ -320,7 +320,7 @@ void swap_buffers() {
 int main() {
     SetTraceLogLevel(LOG_WARNING);
     InitWindow(screen_width, screen_height, "Fluid Sim 65");
-    ToggleFullscreen();
+    //ToggleFullscreen();
 
     my_camera.position = (Vector3){ 0.f, 2.f*box_size, -3.6f*box_size };
     my_camera.yaw = 0.f;
